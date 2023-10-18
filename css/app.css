@@ -1,0 +1,210 @@
+/*Estilos Bases*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: #ffc65a;
+  font-size: 16px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+/*Estilos Contenedor Principal*/
+.container {
+  max-width: 570px;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Estilos del main*/
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+}
+
+section.izquierda {
+  width: 100%; /*Media query 40%*/
+  height: 30%; /*Eliminar esta propiedad en la media query*/
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  background-color: #ffc65a;
+  text-align: center;
+  text-shadow: 1px 1px 8px black;
+}
+.datos {
+  max-width: 60%;
+  height: 80%;
+  line-height: 2.9rem;
+}
+section.izquierda .datos > .logo {
+  width: 100%;
+  font-size: 2rem;
+  }
+section.izquierda .datos > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+section.izquierda .datos > h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+section.izquierda img {
+  max-width: 100%;
+}
+section.derecha {
+  width: 100%; /*Modificar en la query al 60%*/
+  height: 70%; /*Eliminar esta propiedad en la query*/
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+article.articulo {
+  width: 100%; /*Modificar en la query 49%*/
+  height: 17%; /*Eliminar esta propieadad en la query*/
+}
+article.articulo p {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: 2px 2px 10px black;
+}
+article.uno {
+  background-color: #00c4cc;
+}
+
+article.dos {
+  background-color: #ff738e;
+}
+
+article.tres {
+  background-color: #a548ff;
+}
+article.cuatro {
+  background-color: #ffa53b;
+}
+article.cinco {
+  background-color: #6422b8;
+}
+article.seis {
+  background-color: #ffd93b;
+}
+/************************************************************/
+/*Media Queries 361px*/
+@media (min-width: 380px) {
+  section.izquierda img {
+    max-width: 100%;
+    width: 180px;
+  }
+}
+
+@media (min-width: 570px) {
+  html {
+    font-size: 16px;
+   }
+  body {
+    font-family: 'Dancing Script', cursive;
+ }
+ .container {
+  max-width: 100vw;
+  height: 100Vh;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  flex-direction: row; 
+}
+
+section.izquierda {
+  width: 60%; 
+  height: 100%;
+  display: block;
+  }
+
+  .datos {
+    max-width: 100%;
+    height: 29%;
+    line-height: 2.9rem;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+ section.izquierda .datos> h1 {
+  text-align: start;
+  min-width: 50%;
+  font-size: 4rem;
+  order: 2;
+  letter-spacing: 0.4rem;
+ }
+
+ section.izquierda .datos > h2 {
+  width: 30%;
+  font-size: 2rem;
+  order: 3;
+  display: none;
+}
+  section.izquierda .datos > .logo{
+    font-size: 3rem;
+    width: 20%;
+    order: 1;
+    align-items: baseline;
+  }
+  .contenedor-imagen{
+    max-width: 100%;
+    height: 60%;
+    position: relative;
+    top: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: end;
+
+  }
+  section.izquierda img {
+    max-width: 0;
+    min-width: 100%;
+    height: 600px;
+    position: absolute;
+    bottom: 0px;
+  
+   
+  }
+
+  section.derecha {
+    width: 50%; 
+    height: 98%; 
+  }
+  article.articulo {
+    width: 50%; /*Modificar en la query 49%*/
+    height: 35%; /*Eliminar esta propieadad en la query*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article.articulo p {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 5%;
+  text-shadow: 2px 2px 10px black;
+}
+}
